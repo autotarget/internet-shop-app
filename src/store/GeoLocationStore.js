@@ -9,7 +9,7 @@ error: null,
 setCity: (city)=> set({city}),
 fetchCityName: async (lat, lng ) =>{
     try {
-        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=de3e470eb261dccafebb73e5ff820e8b`);
+        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}`);
         const cityName = response.data.name;
         set({city:cityName});
     } catch (error) {
