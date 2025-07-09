@@ -1,0 +1,9 @@
+.menuBtn {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    /* color:#656668; */
+    cursor: pointer;
+    /* font-weight: bold; */
+} 

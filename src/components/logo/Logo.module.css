@@ -1,0 +1,9 @@
+.logo {
+    color: red;
+    font-size: 24px;
+}
+.logo span {
+    color:blue;
+    font-weight: bold;
+    font-size: 24px;
+}

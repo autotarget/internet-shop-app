@@ -1,0 +1,34 @@
+.productCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 10px; */
+    height: 400px;
+    width: 250px;
+    background-color: white;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+}
+.cardImg{
+    width: 150px;
+    height: 150px;
+}
+
+.description {
+    font-size: 12px;
+}
+
+.btnBar {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.Link {
+    color: white;
+}
+.productTitle {
+    text-align: center;
+}
