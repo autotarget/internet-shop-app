@@ -15,7 +15,7 @@ const Position = () => {
           navigator.geolocation.getCurrentPosition((position) => {
                 setCurrentPosition({
                     lat: position.coords.latitude,
-                    lng: position.coords.longitude,
+                    lon: position.coords.longitude,
                 });
             //    navigator.geolocation.clearWatch(geoId)
 
@@ -32,7 +32,7 @@ const Position = () => {
     }, []);
 
     useEffect(()=>{
-       setTimeout(() => {fetchCityName(currentPosition.lat, currentPosition.lng)}, 1000);
+       setTimeout(() => {fetchCityName(currentPosition.lat, currentPosition.lon)}, 1000);
        return clearTimeout();
     },[currentPosition])
     console.log(currentPosition, city)

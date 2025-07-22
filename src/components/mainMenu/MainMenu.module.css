@@ -1,6 +1,14 @@
 .mainMenu {
     width: 500px;
 }
+ 
+.mainMenuList a {
+    color: #656668;
+}
+
+.mainMenuList a:hover {
+    color: blue;
+}
 
 .mainMenuList {
     display: flex;

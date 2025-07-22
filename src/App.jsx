@@ -7,6 +7,11 @@ import { createBrowserRouter, createRoutesFromElements, Outlet, Route, RouterPro
 import MainSection from './blocks/mainSection/MainSection';
 import Cart from './pages/cart/Cart';
 import Product from './pages/product/Product';
+import Actions from './pages/actions/Actions';
+import Bayers from './pages/bayers/Bayers';
+import Shops from './pages/shops/Shops';
+import Tracking from './pages/tracking/Tracking';
+// console.log(process.env.REACT_APP_WEATHER_API_KEY);
 // import '@fontsource/roboto/300.css';
 // import '@fontsource/roboto/400.css';
 // import '@fontsource/roboto/500.css';
@@ -34,6 +39,10 @@ function App() {
         <Route index element={<MainSection />} />
         <Route path='/cart' element={<Cart />} />
         <Route path='/product/:id' element={<Product />} />
+        <Route path='/actions' element={<Actions />} />
+        <Route path='/bayers' element={<Bayers />} />
+        <Route path='/shops' element={<Shops />} />
+        <Route path='/tracking' element={<Tracking />} />
         <Route path='*' element={<Error />} />
       </Route>
     )
