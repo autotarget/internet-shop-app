@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /* gap: 10px; */
     height: 400px;
     width: 250px;
     background-color: white;
@@ -11,7 +10,8 @@
     border-radius: 10px;
     padding: 10px;
 }
-.cardImg{
+
+.cardImg {
     width: 150px;
     height: 150px;
 }
@@ -29,6 +29,7 @@
 .Link {
     color: white;
 }
+
 .productTitle {
     text-align: center;
 }

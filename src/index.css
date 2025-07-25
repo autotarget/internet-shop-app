@@ -5,7 +5,11 @@
   font-family: Roboto, sans-serif;
 }
 
-body, html, #root {height: 100%;}
+body,
+html,
+#root {
+  height: 100%;
+}
 
 a {
   text-decoration: none;
@@ -21,20 +25,18 @@ li {
   align-items: center;
   width: 1400px;
   margin: 0 auto;
-  /* padding: 20px; */
 }
 
 .row {
   display: flex;
   gap: 10px;
   padding: 20px 0;
-  /* width: 100%; */
 }
 
 button {
   color: white;
   text-transform: uppercase;
-  background: linear-gradient(45deg, #005bea,  #00c6fb);
+  background: linear-gradient(45deg, #005bea, #00c6fb);
   border: none;
   border-radius: 5px;
   padding: 5px 10px;
@@ -42,5 +44,5 @@ button {
 }
 
 button:hover {
-transform:scale(1.1);
+  transform: scale(1.1);
 }

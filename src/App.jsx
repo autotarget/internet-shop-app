@@ -1,6 +1,5 @@
 import Header from './blocks/header/Header';
 import Footer from './blocks/footer/Footer';
-// import Cart from './pages/cart/Cart';
 import Error from './pages/errorPage/Error';
 import './App.css';
 import { createBrowserRouter, createRoutesFromElements, Outlet, Route, RouterProvider } from 'react-router-dom';
@@ -11,11 +10,7 @@ import Actions from './pages/actions/Actions';
 import Bayers from './pages/bayers/Bayers';
 import Shops from './pages/shops/Shops';
 import Tracking from './pages/tracking/Tracking';
-// console.log(process.env.REACT_APP_WEATHER_API_KEY);
-// import '@fontsource/roboto/300.css';
-// import '@fontsource/roboto/400.css';
-// import '@fontsource/roboto/500.css';
-// import '@fontsource/roboto/700.css';
+
 
 function App() {
 

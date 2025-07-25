@@ -7,12 +7,10 @@
     transition: 0.5s;
     text-transform: capitalize;
     font-weight: bold;
-    /* transition: background-color 0.3s; */
 }
 
 .listItem:hover {
     color: white;
     text-transform: uppercase;
-    background: linear-gradient(45deg, #005bea,  #00c6fb);
-    /* transition: transform 4s 1s; */
+    background: linear-gradient(45deg, #005bea, #00c6fb);
 }

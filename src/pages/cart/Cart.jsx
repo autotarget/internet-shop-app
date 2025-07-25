@@ -7,12 +7,12 @@ const Cart = () => {
     const totalPrice = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
     return (
         <div className={styles.cart}>
-            <h1>Basket</h1>
+            {/* <h1>Basket</h1> */}
             {console.log(cart)}
             {console.log(cart.length)}
 
             {
-                cart.length === 0 ? (<p>Basket is empty</p>) : (
+                cart.length === 0 ? (<h2>Basket is empty</h2>) : (
                     <div className={styles.tableContainer}>
                         <table className={styles.cartTable}>
                             <thead>

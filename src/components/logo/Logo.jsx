@@ -3,13 +3,13 @@ import styles from './Logo.module.css'
 
 const Logo = () => {
 
-    return (
-   
-      <h2 >
-     <Link className={styles.logo} to={"/"}>My<span>Shop</span>
-     </Link>
-      </h2>
-     
-    )
-    }
-    export default Logo;
+  return (
+
+    <h2 >
+      <Link className={styles.logo} to={"/"}>My<span>Shop</span>
+      </Link>
+    </h2>
+
+  )
+}
+export default Logo;

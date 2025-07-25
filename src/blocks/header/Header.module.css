@@ -6,10 +6,8 @@ header {
     align-items: center;
     background-color: white;
     height: 100px;
-    /* padding: 5px; */
     box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     position: fixed;
-    /* padding: 0 auto; */
     width: 100%;
 
 }
@@ -22,6 +20,7 @@ header {
     border-bottom: 1px solid rgba(34, 60, 80, 0.2);
     justify-content: space-between;
 }
+
 .shopPanel {
     display: flex;
     align-items: center;
@@ -33,7 +32,6 @@ header {
 .leftPanel {
     width: 400px;
     height: 40px;
-    /* border: 1px solid red; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -44,4 +42,3 @@ header {
     align-items: center;
     justify-content: space-around;
 }
-

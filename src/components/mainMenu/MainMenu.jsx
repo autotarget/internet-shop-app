@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import styles from './MainMenu.module.css'
-import MenuItem from '../dropDownMenu/menuItem/MenuItem';
 const MainMenu = () => {
 
   return (

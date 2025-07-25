@@ -1,7 +1,6 @@
 
 import { useEffect } from 'react';
 import useGeoLocationStore from '../../store/GeoLocationStore';
-// import styles from './Logo.module.css'
 
 const Position = () => {
     const setCurrentPosition = useGeoLocationStore((state) => state.setCurrentPosition)
@@ -10,15 +9,12 @@ const Position = () => {
     const fetchCityName = useGeoLocationStore((state) => state.fetchCityName);
     const city = useGeoLocationStore((state) => state.city);
     useEffect(() => {
-        // setTimeout(()=>{})
         if ('geolocation' in navigator) {
-          navigator.geolocation.getCurrentPosition((position) => {
+            navigator.geolocation.getCurrentPosition((position) => {
                 setCurrentPosition({
                     lat: position.coords.latitude,
                     lon: position.coords.longitude,
                 });
-            //    navigator.geolocation.clearWatch(geoId)
-
             },
                 (err) => {
                     setError(err.message);
@@ -31,18 +27,16 @@ const Position = () => {
 
     }, []);
 
-    useEffect(()=>{
-       setTimeout(() => {fetchCityName(currentPosition.lat, currentPosition.lon)}, 1000);
-       return clearTimeout();
-    },[currentPosition])
+    useEffect(() => {
+        setTimeout(() => { fetchCityName(currentPosition.lat, currentPosition.lon) }, 1000);
+        return clearTimeout();
+    }, [currentPosition])
     console.log(currentPosition, city)
 
     return (
-
         <h3 >
             {city}
         </h3>
-
     )
 }
 export default Position;

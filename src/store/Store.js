@@ -1,6 +1,5 @@
 import axios from "axios";
 import { create } from "zustand";
-// import Categories from "./categories/Categories";
 
 const useStore = create((set) => ({
     products: [],

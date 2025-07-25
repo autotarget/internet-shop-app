@@ -1,9 +1,6 @@
-
-
 import useCartStore from '../../store/CartStore';
 import styles from './Card.module.css'
 import { Link } from 'react-router-dom';
-import Product from '../../pages/product/Product';
 import useStore from '../../store/store';
 
 const Card = ({ product }) => {
