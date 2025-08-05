@@ -9,12 +9,22 @@
     align-items: center;
     gap: 5px;
     color: #656668;
-    width: 100%;
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    /* border-top-left-radius: 20px; */
+
 }
 
 .listItem {
-    padding: 10px;
+    margin-top: 10px;
     font-size: 14px;
     color: black;
     width: 100%;
 } 
+
+.navLink:hover {
+     color: white;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #005bea, #00c6fb);
+}

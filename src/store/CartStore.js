@@ -8,11 +8,11 @@ const useCartStore = create((set, get) => ({
     
     console.log(existingProduct);
     if (existingProduct) {
-      // Если товар уже есть в корзине, увеличиваем его количество
+     
       existingProduct.quantity += 1;
       set({ cart: [...get().cart] });
     } else {
-      // Если товара нет в корзине, добавляем новый
+    
       set({ cart: [...get().cart, { ...product, quantity: 1 }] });
     }
   },

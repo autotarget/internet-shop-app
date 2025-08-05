@@ -8,6 +8,7 @@ import '../../../src/index.css';
 import MainMenu from '../../components/mainMenu/MainMenu';
 import Input from '../../components/input/Input';
 import { Link } from 'react-router-dom';
+import IconsPanel from '../../components/iconsPanel/IconsPanel';
 
 const Header = () => {
 
@@ -31,6 +32,7 @@ const Header = () => {
             <Button variant="contained">Catalog</Button>
           </Link>
           <Input />
+          <IconsPanel/>
         </div>
       </div>
 

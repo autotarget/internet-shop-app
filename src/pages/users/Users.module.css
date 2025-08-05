@@ -1,0 +1,9 @@
+.tableContainer {
+    width: 1400px;
+    /* margin-top: 50px; */
+    margin: 0 auto;
+}
+
+.table {
+    margin-top: 20px;
+}

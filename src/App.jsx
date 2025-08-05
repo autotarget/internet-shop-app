@@ -10,6 +10,8 @@ import Actions from './pages/actions/Actions';
 import Bayers from './pages/bayers/Bayers';
 import Shops from './pages/shops/Shops';
 import Tracking from './pages/tracking/Tracking';
+import Form from './pages/form/Form';
+import Users from './pages/users/Users';
 
 
 function App() {
@@ -38,6 +40,9 @@ function App() {
         <Route path='/bayers' element={<Bayers />} />
         <Route path='/shops' element={<Shops />} />
         <Route path='/tracking' element={<Tracking />} />
+        <Route path='/form' element={<Form />} />
+        <Route path='/users' element={<Users/>} />
+
         <Route path='*' element={<Error />} />
       </Route>
     )

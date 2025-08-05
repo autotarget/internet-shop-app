@@ -2,6 +2,9 @@ import useCartStore from '../../store/CartStore';
 import styles from './Card.module.css'
 import { Link } from 'react-router-dom';
 import useStore from '../../store/store';
+import IconButton from '@mui/material/IconButton';
+import { AddShoppingCart } from '@mui/icons-material';
+import { ReadMore } from '@mui/icons-material';
 
 const Card = ({ product }) => {
    const { cart, addProduct } = useCartStore();
@@ -25,8 +28,12 @@ const Card = ({ product }) => {
          <p>Price: {product.price} € </p>
          <p>Quantity: {product.rating.count}</p>
          <div className={styles.btnBar}>
-            <button onClick={handleAddToCart}> <Link className={styles.Link} to={`/cart`}>In Basket</Link></button>
-            <button onClick={handleShowProductInfo}> <Link className={styles.Link} to={`/product/${product.id}`}>More...</Link></button>
+            <Link className={styles.Link} to={`/cart`}><IconButton onClick={handleAddToCart} variant="outlined" color='primary' >
+               <AddShoppingCart fontSize='large' />
+            </IconButton></Link>
+            <Link className={styles.Link} to={`/product/${product.id}`}><IconButton onClick={handleShowProductInfo} variant="outlined" color='primary'>
+               <ReadMore fontSize='large' variant='outlined' />
+            </IconButton></Link>
          </div>
       </div>
    )

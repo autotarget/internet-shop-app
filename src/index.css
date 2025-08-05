@@ -36,13 +36,13 @@ li {
 button {
   color: white;
   text-transform: uppercase;
-  background: linear-gradient(45deg, #005bea, #00c6fb);
+  /* background: linear-gradient(45deg, #005bea, #00c6fb); */
   border: none;
   border-radius: 5px;
   padding: 5px 10px;
   cursor: pointer;
 }
 
-button:hover {
+/* button:hover {
   transform: scale(1.1);
-}
+} */

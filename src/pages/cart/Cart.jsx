@@ -1,6 +1,8 @@
 import useCartStore from "../../store/CartStore";
 import styles from './Cart.module.css'
-import Card from "../../components/card/Card";
+import { DeleteOutline } from "@mui/icons-material";
+import { Button } from '@mui/material';
+import IconButton from '@mui/material/IconButton';
 
 const Cart = () => {
     const { cart, removeProduct, clearCart } = useCartStore();
@@ -31,14 +33,21 @@ const Cart = () => {
                                         <td><img className={styles.cartImg} src={item.image} alt="productFoto" /></td>
                                         <td>{item.price}</td>
                                         <td>{item.quantity}</td>
-                                        <td><button onClick={() => { removeProduct(item.id) }}>Delete</button></td>
+                                        <td>
+                                            <IconButton onClick={() => { removeProduct(item.id) }} variant="outlined" color='primary' >
+                                                <DeleteOutline fontSize='large' />
+                                            </IconButton>
+                                        </td>
                                     </tr>
                                 ))}
                             </tbody>
                         </table>
-           
+
                         <p>Total Price: {totalPrice.toFixed(2)}€</p>
-                        <button onClick={clearCart}>Clear Basket</button>
+                        <Button onClick={clearCart} variant="contained" color='primary' >
+                            Clear Basket
+                        </Button>
+                        {/* <button onClick={clearCart}>Clear Basket</button> */}
                     </div>
                 )
 
