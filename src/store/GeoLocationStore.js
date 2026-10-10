@@ -1,6 +1,6 @@
 import axios from "axios";
 import { create } from "zustand";
-import { apiKey } from "../../names";
+import { apiKey } from "../../names.js";
 
 
 
