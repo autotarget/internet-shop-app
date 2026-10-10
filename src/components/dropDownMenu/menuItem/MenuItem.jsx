@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from './MenuItem.Module.css';
+import styles from './MenuItem.module.css';
 
 const MenuItem  = (props) => {
 
