@@ -1,7 +1,7 @@
 import useCartStore from '../../store/CartStore';
 import styles from './Card.module.css'
 import { Link } from 'react-router-dom';
-import useStore from '../../store/store';
+import useStore from '../../store/Store';
 import IconButton from '@mui/material/IconButton';
 import { AddShoppingCart } from '@mui/icons-material';
 import { ReadMore } from '@mui/icons-material';

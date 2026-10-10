@@ -1,7 +1,7 @@
 
 
 import styles from './Product.module.css'
-import useStore from '../../store/store';
+import useStore from '../../store/Store';
 import { Link } from 'react-router-dom';
 import useCartStore from '../../store/CartStore';
 import { AddShoppingCart } from '@mui/icons-material';

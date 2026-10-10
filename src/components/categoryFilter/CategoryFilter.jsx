@@ -1,6 +1,6 @@
 
 import styles from './CategoryFilter.module.css'
-import useStore from '../../store/store';
+import useStore from '../../store/Store';
 import { useEffect } from 'react';
 
 
