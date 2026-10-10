@@ -1,8 +1,8 @@
 import axios from "axios";
 import { create } from "zustand";
-import { apiKey } from "../../names.js";
+// import { apiKey } from "../../names.js";
 
-
+const API_KEY = import.meta.env.VITE_MAPS_API_KEY;
 
 const useGeoLocationStore = create((set) => ({
     city: '',
