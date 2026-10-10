@@ -6,15 +6,16 @@ import { Logout } from '@mui/icons-material';
 // import { ReadMore } from '@mui/icons-material';
 import styles from './IconsPanel.module.css'
 import {Delete} from '@mui/icons-material';
-
+import { Link } from 'react-router-dom';
  const IconsPanel = () => {
 
   return (
 <div className={styles.icons_panel}>
- <IconButton variant="outlined" color='primary'>
- <Login color='red' />
+ <IconButton component = {Link} to = "/form" variant="outlined" color='primary'>
+ <Login />
 </IconButton>
-<IconButton variant="outlined" color='primary'>
+
+<IconButton  component = {Link} to = "/" variant="outlined" color='primary'>
  <Logout />
 </IconButton>
 </div>

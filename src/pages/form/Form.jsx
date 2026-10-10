@@ -9,9 +9,12 @@ const Form = () => {
             <div className={styles.form}>
                 <Input variant="outlined" size="md" color="primary" placeholder="username" />
                 <Input color="primary" placeholder="password" type='password' />
-                <Input color="primary" placeholder="email" type='e-mail' />
+                {/* <Input color="primary" placeholder="email" type='e-mail' /> */}
                 <div className='btn-submit'>
-                    <Button>Send</Button>
+                    <Button>Login</Button>
+                </div>
+                    <div className='btn-register'>
+                    <Button>Create account</Button>
                 </div>
             </div>
         </div>
